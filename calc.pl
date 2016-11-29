@@ -77,13 +77,6 @@ sub pushButton {
     my $btn = $Tk::widget;
     if($check_value eq int($btn->cget('-text'))) {
         $btn -> placeForget();
-        for (my $i=0; $i <= 2; $i++) {
-            for(my $j=0; $j <= 2; $j++) {
-                $btn_array[$i][$j] -> configure(-foreground=>'black');
-            }
-        }
         &setUp;
-    } else {
-        $btn -> configure(-foreground=>'red');
     }
 }
